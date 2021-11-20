@@ -1,1 +1,1 @@
-console.log("Create webpack config file");
+console.log("Test webpack installation");

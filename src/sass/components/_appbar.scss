@@ -1,5 +1,8 @@
+@use "../abstracts/variables" as vars;
 // appbar
 .appbar {
+  display: flex;
+  justify-content: space-between;
   // appbar__logo
   &__logo {
   }
@@ -10,9 +13,30 @@
 
   // appbar__nav
   &__nav {
+    display: flex;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    li {
+      display: block;
+    }
   }
 
   // appbar__link
   &__link {
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem;
+    color: #000;
+
+    &:hover {
+      color: vars.$secondary-color;
+    }
   }
 }

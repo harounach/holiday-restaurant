@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as vars;
+
 *,
 *::before,
 *::after {
@@ -13,6 +15,7 @@ html {
 
 body {
   font-size: 1rem;
+  background-color: vars.$background-color;
 }
 
 .container {

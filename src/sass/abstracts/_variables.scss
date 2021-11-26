@@ -6,3 +6,13 @@ $background-color: #f3fff9;
 // theme text colors
 $on-primary-color: #fff;
 $on-secondary-color: #000;
+
+// breakpoints
+$breakpoints: (
+  tablet: 600px,
+  large-tablet: 720px,
+  xlarge-tablet: 840px,
+  small-desktop: 960px,
+  desktop: 1024px,
+  large-desktop: 1280px,
+);

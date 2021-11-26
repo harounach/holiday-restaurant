@@ -1,0 +1,62 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins";
+
+// menu-grid
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+
+  // tablet
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // large-tablet
+  @include mixins.large-tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // small-desktop
+  @include mixins.small-desktop {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+// menu-card
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  // menu-card__top
+  &__top {
+    height: 50%;
+  }
+
+  // menu-card__img
+  &__img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  // menu-card__bottom
+  &__bottom {
+    height: 50%;
+    text-align: center;
+  }
+
+  // menu-card__name
+  &__name {
+    margin: 2rem 0;
+    color: vars.$secondary-color;
+  }
+
+  // menu-card__price
+  &__price {
+    margin: 2rem 0;
+  }
+}

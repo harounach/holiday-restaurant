@@ -1,0 +1,17 @@
+@use "../abstracts/mixins";
+
+.container {
+  width: 100%;
+  max-width: 996px;
+  margin: 0 1rem;
+
+  // tablet
+  @include mixins.tablet {
+    margin: 0 1.5rem;
+  }
+
+  // large-tablet
+  @include mixins.large-tablet {
+    margin: auto;
+  }
+}

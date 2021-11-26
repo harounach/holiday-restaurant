@@ -17,10 +17,15 @@
 @use "./base/reset";
 @use "./base/typography";
 
+// <layout>
+// 01-grid
+@use "./layout/grid";
+
 // <components>
 @use "./components/appbar";
 @use "./components/button";
 @use "./components/chip";
+@use "./components/menu";
 
 // <pages>
 @use "./pages/home.scss";

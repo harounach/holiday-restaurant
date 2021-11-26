@@ -1,0 +1,44 @@
+@use "sass:map";
+@use "./variables" as vars;
+
+// tablet
+@mixin tablet {
+  @media screen and (min-width: map.get(vars.$breakpoints, "tablet")) {
+    @content;
+  }
+}
+
+// large tablet
+@mixin large-tablet {
+  @media screen and (min-width: map.get(vars.$breakpoints, "large-tablet")) {
+    @content;
+  }
+}
+
+// extra large tablet
+@mixin xlarge-tablet {
+  @media screen and (min-width: map.get(vars.$breakpoints, "xlarge-tablet")) {
+    @content;
+  }
+}
+
+// small desktop
+@mixin small-desktop {
+  @media screen and (min-width: map.get(vars.$breakpoints, "small-desktop")) {
+    @content;
+  }
+}
+
+// desktop
+@mixin desktop {
+  @media screen and (min-width: map.get(vars.$breakpoints, "desktop")) {
+    @content;
+  }
+}
+
+// large desktop
+@mixin large-desktop {
+  @media screen and (min-width: map.get(vars.$breakpoints, "large-desktop")) {
+    @content;
+  }
+}

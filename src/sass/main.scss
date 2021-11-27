@@ -26,6 +26,10 @@
 @use "./components/button";
 @use "./components/chip";
 @use "./components/menu";
+@use "./components/gallery";
+@use "./components/open-hours";
+@use "./components/footer";
+@use "./components/address";
 
 // <pages>
 @use "./pages/home.scss";

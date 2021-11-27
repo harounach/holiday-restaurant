@@ -1,0 +1,29 @@
+@use "../abstracts/mixins";
+// gallery
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  gap: 1rem;
+
+  // tablet
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // large-tablet
+  @include mixins.large-tablet {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  // gallery__item
+  &__item {
+  }
+
+  // gallery__img
+  &__img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+  }
+}

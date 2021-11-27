@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
@@ -282,23 +289,43 @@
         <div class="footer__section">
           <h2 class="title title--primary">Contact</h2>
         </div>
-        <div class="footer__section footer__sect--center">
-          <address class="address">
-            <p>
-              <span class="icon">icon</span>
-              <span class="address__address"
-                >5033 Lighthouse Drive, Stotts City, MO 65756</span
-              >
-            </p>
-            <p>
-              <span class="icon">icon</span
-              ><span class="address__phone">(417) 285-4144</span>
-            </p>
-            <p>
-              <span class="icon">icon</span
-              ><span class="address__email">contact@sundayrestaurant.com</span>
-            </p>
-          </address>
+        <div class="footer__section footer__section--center">
+          <div class="footer__address">
+            <address class="address">
+              <p>
+                <i class="address__icon fas fa-map-marker-alt"></i>
+                <span class="address__text"
+                  >5033 Lighthouse Drive, Stotts City, MO 65756</span
+                >
+              </p>
+              <p>
+                <i class="address__icon fas fa-phone"></i>
+                <span class="address__text">(417) 285-4144</span>
+              </p>
+              <p>
+                <i class="address__icon fas fa-envelope"></i>
+                <span class="address__text">contact@sundayrestaurant.com</span>
+              </p>
+            </address>
+          </div>
+          <div class="footer__socialbar">
+            <div class="socialbar">
+              <a class="socialbar__link" href="#"
+                ><i class="socialbar__icon fab fa-facebook"></i
+              ></a>
+              <a class="socialbar__link" href="#"
+                ><i class="socialbar__icon fab fa-instagram"></i
+              ></a>
+              <a class="socialbar__link" href="#"
+                ><i class="socialbar__icon fab fa-yelp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__section">
+          <p class="footer__notice">
+            Copyright© 2021, Sunday Restuanrat, All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>

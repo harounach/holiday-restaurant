@@ -1,0 +1,17 @@
+@use "../abstracts/variables" as vars;
+
+// socialbar
+.socialbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  // socialbar__link
+  &__link {
+    font-size: 2rem;
+    color: vars.$on-primary-color;
+  }
+
+  // socialbar__icon
+  &__icon {
+  }
+}

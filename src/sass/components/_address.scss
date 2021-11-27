@@ -1,15 +1,24 @@
+@use "../abstracts/variables" as vars;
+
 // address
 .address {
   font-style: normal;
-  // address__address
-  &__address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  p {
+    display: flex;
+    color: vars.$on-primary-color;
+    align-items: center;
+    gap: 1rem;
+  }
+  // address__text
+  &__text {
+    font-size: 1rem;
   }
 
-  // address__phone
-  &__phone {
-  }
-
-  // address__email
-  &__email {
+  // address__icon
+  &__icon {
+    font-size: 1.25rem;
   }
 }

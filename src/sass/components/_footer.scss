@@ -3,4 +3,23 @@
 // footer
 .footer {
   background-color: vars.$primary-color;
+  padding: 1rem 0;
+
+  // footer__section
+  &__section {
+    margin-bottom: 1rem;
+
+    // footer__section--center
+    &--center {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  // footer__notice
+  &__notice {
+    color: vars.$on-primary-color;
+    text-align: center;
+  }
 }
